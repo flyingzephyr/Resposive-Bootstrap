@@ -130,3 +130,206 @@ img {
 .navbar .navbar-nav .nav-item .nav-link:hover::after {
     width: 100%;
 }
+
+
+/* navigation ends */
+
+
+/* ==================
+    banner starts
+====================== */
+
+#banner .bg1 {
+    background: url('../image/banner1.jpg') no-repeat center/cover;
+}
+
+#banner .bg2 {
+    background: url("../image/banner2.jpg") no-repeat center/cover;
+}
+
+#banner .bg3 {
+    background: url("../image/banner3.jpg") no-repeat center/cover;
+}
+
+#banner {
+    position: relative;
+}
+
+#banner .banner-item {
+    position: relative;
+    z-index: 1;
+    padding-top: 255px;
+    padding-bottom: 118px;
+}
+
+#banner .banner-item::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#banner .banner-item .banner-text a {
+    font-family: var(--hf);
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: white;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    margin-top: 30px;
+    margin-right: 28px;
+    padding: 5px 20px;
+}
+
+#banner .banner-item .banner-text a:hover {
+    background-color: var(--bclr);
+    border-color: var(--bclr);
+}
+
+#banner .banner-item .banner-text h4 {
+    font-family: var(--hf);
+    font-size: 2.9rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 22;
+}
+
+#banner .banner-item .banner-text h1 {
+    font-family: var(--hf);
+    font-weight: 700;
+    font-size: 5.5rem;
+    color: var(--bclr);
+    padding-bottom: 10px;
+    position: relative;
+}
+
+#banner .banner-item .banner-text p {
+    font-size: 1.3rem;
+    font-family: var(--pf);
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin: 0;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+#banner .bg1 .banner-text h4::before {
+    content: '';
+    width: 160px;
+    height: 3px;
+    background: var(--bclr);
+    position: absolute;
+    top: 22px;
+    left: 23px;
+    transform: skewX(-45deg);
+    -webkit-transform: skewX(-45deg);
+    -moz-transform: skewX(-45deg);
+    -ms-transform: skewX(-45deg);
+    -o-transform: skewX(-45deg);
+}
+
+#banner .bg1 .banner-text h4::after {
+    content: '';
+    width: 140px;
+    height: 3px;
+    background: var(--bclr);
+    position: absolute;
+    top: 22px;
+    right: 3px;
+    transform: skewX(45deg);
+    -webkit-transform: skewX(45deg);
+    -moz-transform: skewX(45deg);
+    -ms-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
+}
+
+#banner .bg1 .banner-text h1::before {
+    content: '';
+    width: 3px;
+    height: 200px;
+    background: var(--bclr);
+    position: absolute;
+    top: -28px;
+    left: 21px;
+}
+
+#banner .bg1 .banner-text h1::after {
+    content: '';
+    width: 3px;
+    height: 200px;
+    background: var(--bclr);
+    position: absolute;
+    top: -28px;
+    right: 2px;
+}
+
+#banner .bg1 .banner-text p::before {
+    content: '';
+    width: 92px;
+    height: 3px;
+    background: var(--bclr);
+    position: absolute;
+    top: 90px;
+    left: -33px;
+}
+
+#banner .bg1 .banner-text p::after {
+    content: '';
+    width: 84px;
+    height: 3px;
+    background: var(--bclr);
+    position: absolute;
+    top: 90px;
+    right: -52px;
+}
+
+#banner ul {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+#banner ul li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0px 5px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+#banner ul li:hover {
+    background: var(--bclr);
+    border: red;
+}
+
+#banner ul li button {
+    display: none;
+}
