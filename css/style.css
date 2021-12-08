@@ -45,6 +45,20 @@ img {
     navigation menu starts
 =================================*/
 
+
+/* nav button.navbar-toggler {
+    position: absolute;
+    right: 5%;
+    top: 0;
+    z-index: 999;
+    color: rgb(75, 66, 66) !important;
+    background-color: white;
+}
+
+nav button.navbar-toggler span.navbar-toggler-icon {
+    background: rgb(70, 64, 64);
+} */
+
 .navbar {
     padding: 0px;
     background: rgba(53, 53, 53, 0.25);
@@ -52,7 +66,7 @@ img {
     top: 30px;
     left: 0px;
     width: 100%;
-    z-index: 999;
+    z-index: 99;
 }
 
 .navbar .navbar-brand {
@@ -325,6 +339,11 @@ img {
     -o-transition: all linear .4s;
 }
 
+#banner ul li.slick-active {
+    background: var(--bclr);
+    border: var(--bclr);
+}
+
 #banner ul li:hover {
     background: var(--bclr);
     border: red;
@@ -333,3 +352,212 @@ img {
 #banner ul li button {
     display: none;
 }
+
+
+/* ===============
+    About Starts 
+=================*/
+
+#about {
+    padding: 80px 0px;
+}
+
+#about .about-heading h3 {
+    font-family: var(--hf);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: var(--hclr);
+}
+
+#about .about-heading img {
+    padding-bottom: 25px;
+}
+
+#about .about-text {
+    text-align: center;
+    font-family: var(--pf);
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding: 0px 40px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: var(--pclr);
+}
+
+#about .about-image figure {
+    position: relative;
+}
+
+#about .about-image .about-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+#about .about-image .about-overlay i {
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2px;
+    color: var(--bclr);
+    font-size: 6rem;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#about .about-image .about-overlay i:hover {
+    color: red;
+}
+
+
+/* about ends */
+
+
+/* =================
+     Gallery Starts
+==================== */
+
+#gallery {
+    position: relative;
+    z-index: 1;
+}
+
+#gallery .gallery-bg {
+    background: url("../image/academia.jpg") no-repeat center/cover;
+    position: relative;
+    z-index: -2;
+}
+
+#gallery .gallery-bg::after {
+    content: '';
+    background: rgba(0, 0, 0, 0.555);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+#gallery .gallery-heading h3 {
+    font-family: var(--hf);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: var(--hclr);
+}
+
+#gallery .gallery-heading img {
+    padding-bottom: 30px;
+    width: 160px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+#gallery .gallery-bg figure {
+    position: relative;
+    z-index: 1;
+    margin: 30px 10px;
+    overflow: hidden;
+}
+
+#gallery .gallery-bg figure .gl-overlay {
+    width: 95%;
+    height: 95%;
+    background: rgba(226, 62, 56, 0.5);
+    position: absolute;
+    top: 2.5%;
+    left: 100%;
+    z-index: 2;
+    border: 5px solid rgba(255, 255, 255, 0.608);
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+#gallery .gallery-bg figure:hover .gl-overlay {
+    left: 2.5%;
+}
+
+#gallery .gallery-bg figure .gl-overlay i {
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-size: 3rem;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+/* gallery ends */
+
+
+/*==================
+    Our team 
+====================*/
+
+#our-team .team-heading h3 {
+    font-family: var(--hf);
+    margin-top: 78px;
+    font-size: 2.2rem;
+    color: var(--hclr);
+}
+
+#our-team .team-heading img {
+    padding-bottom: 28px;
+}
+
+#our-team .profile .image1 {
+    text-align: center;
+}
+
+#our-team .profile .image1 .img {
+    position: relative;
+}
+
+#our-team .profile .image1 .overlay-img {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(226, 62, 56, 0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#our-team .profile .image1 h5 {
+    text-transform: uppercase;
+    font-family: var(--hf);
+    font-weight: 600;
+    color: #333333;
+    margin-top: 18px;
+}
+
+#our-team .profile .image1 p {
+    text-transform: capitalize;
+    font-family: var(--hf);
+    font-size: 1.3rem;
+    color: #666666;
+}
+
+
+/* our team ends */
